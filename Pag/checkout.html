@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Compra | Casa Segura</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/pages.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>CASA<span>SEGURA</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="catalog.html">Catálogo</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+                <li class="cart-icon">
+                    <a href="cart.html">🛒 <span id="cart-count">0</span></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="section-title">Finalizar Pedido</h2>
+        <div class="checkout-container">
+            <form id="checkout-form">
+                <div class="form-section">
+                    <h3>Datos de Contacto</h3>
+                    <div class="input-group">
+                        <label for="name">Nombre y Apellido</label>
+                        <input type="text" id="name" name="name" placeholder="Ej: Juan Pérez" required>
+                        <span id="name-error" class="error-text"></span>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="juan@correo.com" required>
+                        <span id="email-error" class="error-text"></span>
+                    </div>
+                    <div class="input-group">
+                        <label for="phone">Teléfono Móvil (9 dígitos)</label>
+                        <input type="tel" id="phone" name="phone" placeholder="987654321" required>
+                        <span id="phone-error" class="error-text"></span>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>Detalles de Instalación</h3>
+                    <div class="input-group">
+                        <label for="property">Tipo de Propiedad</label>
+                        <select id="property" name="property" required>
+                            <option value="">Seleccione una opción</option>
+                            <option value="casa">Casa Particular</option>
+                            <option value="departamento">Departamento</option>
+                            <option value="oficina">Oficina/Local Comercial</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                        <span id="property-error" class="error-text"></span>
+                    </div>
+                    <div class="input-group">
+                        <label for="address">Dirección Completa</label>
+                        <input type="text" id="address" name="address" placeholder="Av. Principal 123, Distrito" required>
+                        <span id="address-error" class="error-text"></span>
+                    </div>
+                </div>
+
+                <div class="order-summary">
+                    <h4>Resumen del Pedido</h4>
+                    <p>Total a pagar (incluye instalación básica): <strong id="checkout-total">S/ 0.00</strong></p>
+                </div>
+
+                <button type="submit" class="btn-pay">CONFIRMAR Y PAGAR</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="../js/productos.js"></script>
+    <script src="../js/carro.js"></script>
+    <script src="../js/validacion.js"></script>
+    <script src="../js/verificacion.js"></script>
+</body>
+</html>

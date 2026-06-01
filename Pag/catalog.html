@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo | Casa Segura</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/pages.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>CASA<span>SEGURA</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="catalog.html">Catálogo</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+                <li class="cart-icon">
+                    <a href="cart.html">🛒 <span id="cart-count">0</span></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="catalog-header">
+            <h2 class="section-title">Nuestro Catálogo</h2>
+            <div class="filters" style="text-align: center; margin-bottom: 30px;">
+                <input type="text" id="search-input" placeholder="Buscar cámaras..." style="padding: 10px; width: 300px; border-radius: 5px; border: 1px solid #ccc;">
+                <select id="category-filter" style="padding: 10px; border-radius: 5px; border: 1px solid #ccc; margin-left: 10px;">
+                    <option value="all">Todas las categorías</option>
+                    <option value="Exterior">Exterior</option>
+                    <option value="Interior">Interior</option>
+                    <option value="Sistemas">Sistemas</option>
+                </select>
+            </div>
+        </section>
+
+        <div id="catalog-products" class="product-grid">
+            <!-- Los productos se cargarán dinámicamente mediante JavaScript -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Casa Segura. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../js/productos.js"></script>
+    <script src="../js/carro.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/catalogo.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito | Casa Segura</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/pages.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>CASA<span>SEGURA</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="catalog.html">Catálogo</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+                <li class="cart-icon">
+                    <a href="cart.html">🛒 <span id="cart-count">0</span></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="section-title">Tu Carrito</h2>
+        <div class="cart-container">
+            <div id="cart-items-list">
+                <!-- Los elementos del carrito se cargarán dinámicamente aquí -->
+            </div>
+            <div class="cart-summary">
+                Total: S/ <span id="cart-total-amount">0.00</span>
+            </div>
+            <a href="checkout.html" class="btn-checkout">Finalizar Pedido</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Casa Segura. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../js/productos.js"></script>
+    <script src="../js/carro.js"></script>
+    <script src="../js/interfaz_carro.js"></script>
+</body>
+</html>
