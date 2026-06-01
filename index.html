@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Segura | Seguridad Avanzada</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>CASA<span>SEGURA</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Pag/catalog.html">Catálogo</a></li>
+                <li><a href="Pag/contact.html">Contacto</a></li>
+                <li class="cart-icon">
+                    <a href="Pag/cart.html">🛒 <span id="cart-count">0</span></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Vigila lo que más quieres</h2>
+            <p>Soluciones inteligentes de seguridad para tu hogar y negocio con tecnología 4K y acceso remoto.</p>
+            <a href="Pag/catalog.html" class="btn-cta">Ver Catálogo</a>
+        </section>
+
+        <section id="featured">
+            <h2 class="section-title">Productos Destacados</h2>
+            <div id="featured-products" class="product-grid">
+                <!-- Los productos se cargarán dinámicamente mediante JavaScript -->
+            </div>
+        </section>
+
+        <section id="home-contact" class="home-contact">
+            <div class="contact-container">
+                <h2 class="section-title">¿Necesitas Asesoría?</h2>
+                <p style="text-align: center; margin-bottom: 20px;">Déjanos tus datos y un experto en seguridad te contactará.</p>
+                <form id="home-contact-form" class="mini-form">
+                    <div class="form-row">
+                        <input type="text" id="home-name" placeholder="Nombre" required>
+                        <input type="email" id="home-email" placeholder="Correo" required>
+                    </div>
+                    <textarea id="home-message" placeholder="¿Cómo podemos ayudarte?" rows="3" required></textarea>
+                    <button type="submit" class="btn-cta" style="border: none; width: 100%; cursor: pointer;">Enviar Solicitud</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Casa Segura. Todos los derechos reservados.</p>
+        <p>Expertos en cámaras de seguridad.</p>
+    </footer>
+
+    <!-- Scripts y archivos de lógica -->
+    <script src="js/productos.js"></script>
+    <script src="js/carro.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
